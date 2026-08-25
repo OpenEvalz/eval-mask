@@ -1,0 +1,45 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "mask",
+    "slug": "mask",
+    "title": "MASK: Disentangling Honesty from Accuracy in AI Systems",
+    "group": "Safeguards",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/mask",
+    "inspect_ai": "0.3.260",
+    "eval_version": "5-E",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "low",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "mask",
+      "samples": 1000
+    }
+  ],
+  "total_samples": 1000,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "cais/MASK",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
